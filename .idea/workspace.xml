@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09fd3872-975d-4588-ad24-359637f14ded" name="Default Changelist" comment="initial changes">
+    <list default="true" id="09fd3872-975d-4588-ad24-359637f14ded" name="Default Changelist" comment="template changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/templates/game/draw.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/templates/game/draw.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/templates/game/win.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/templates/game/win.html" afterDir="false" />
@@ -49,7 +49,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627481751511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="template changes">
+      <created>1627484500138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627484500138</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,7 +72,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial changes" />
+    <MESSAGE value="template changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="template changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1627481388340">
@@ -80,10 +88,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627481578641" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1627483218597">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1627484510060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1627483218597" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1627484510060" />
     <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1627480035281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
