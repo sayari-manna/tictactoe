@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICTACTOE</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-light" style="background-color: rgb(34, 22, 92);">
+        <div class="container-fluid  align-middle">
+          <h3 class=" text-xl-center" style="color: cornsilk;">TICTACTOE</h3>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">                  
+                <div style="padding-top: 40%;width: 100%;">
+                    <div class="border border-secondary rounded" style="padding-left: 5%;padding-top: 5%;background-color: rgb(85, 233, 164);">
+                        <div class="mb-3"style="padding-left:5%;">
+                            <h1>yayyyyy!!!!</h1>
+                            <br>
+                            <h2>{{winner}}, you have won</h2>
+                            <br>
+                            <p>Winner : {{winner}}</p>
+                            <p>Win Symbol : {{win_sym}}</p>
+                        </div>
+                        <br>
+                        <div class="mb-3"style="padding-left:25%;">
+                            <form method="GET" action="start" class="align-middle rounded">
+                                <button type="submit" class="btn btn-success">Play Again</button>
+                            </form>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="container" style="padding-top: 20%;padding-left: 10%;">
+                    <div class="row row-md-4 border-bottom border-secondary" >
+                        {% if 0 in x or 0 in o %}
+                            {% if 0 in x %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 1 in x or 1 in o %}
+                            {% if 1 in x %}
+                                <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 2 in x or 2 in o %}
+                            {% if 2 in x %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="row row-md-2 border-bottom border-top border-secondary ">
+                        {% if 3 in x or 3 in o %}
+                            {% if 3 in x %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 4 in x or 4 in o %}
+                            {% if 4 in x %}
+                                <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-left border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 5 in x or 5 in o %}
+                            {% if 5 in x %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-left border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="row row-md-2 border-top border-secondary">
+                        {% if 6 in x or 6 in o %}
+                            {% if 6 in x %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-right border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 7 in x or 7 in o %}
+                            {% if 7 in x %}
+                                <div class="col-md-4 border-left border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-left border-right border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-left border-right border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                        {% if 8 in x or 8 in o %}
+                            {% if 8 in x %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">X</h1>
+                                </div>
+                            {% else %}
+                                <div class="col-md-4 border-left border-secondary text-xl-center">
+                                    <h1 class="text" style="padding-top: 15%;">O</h1>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-md-4 border-left border-secondary text-xl-center">
+                                <h1 class="text" style="padding-top: 15%;"></h1>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style> 
+        .button { 
+        height: 100px; 
+        width: 226px;
+        background-color: rgb(255, 255, 255); 
+        border: rgb(248, 248, 248);
+        } 
+        .text {
+            height: 90px; 
+            width: 226px;
+            background-color: rgb(255, 255, 255); 
+        }
+    </style> 
+</body>
+</html>
